@@ -1,12 +1,10 @@
-# Your Name Here
+# Eleanor Kaufman
 # UWYO COSC 1010
-# Submission Date
-# Lab 03 
-# Lab Section: 
-# Sources, people worked with, help given to: 
-# your
-# comments
-# here
+# 10/01/24
+# Lab 04 
+# Lab Section: 15
+# Sources, people worked with, help given to: None
+
 
 
 
@@ -99,7 +97,15 @@ min_temps = [
 # You cannot use any pre-existing functions (like mean()) and must perform the calculations manually.
 # Output the results of both calculations.
 
+for max_temp in range(len(max_temp)):
+    print 
+
+
 # For the next part, determine the highest and lowest recorded temperatures.
 # HINT: You can find this information without using any logic or looping.
+max_temps.sort()
+min_temps.sort()
+print(f"the highest recorded tempurature for Laramie in 2023 was {max_temps[-1]} degrees")
+print(f"the lowest recorded tempurature for Laramie in 2023 was {min_temps[0]} degrees")
 
 
