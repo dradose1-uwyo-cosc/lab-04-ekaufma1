@@ -96,16 +96,23 @@ min_temps = [
 # Write a single for loop to calculate both the average maximum temperature and the average minimum temperature.
 # You cannot use any pre-existing functions (like mean()) and must perform the calculations manually.
 # Output the results of both calculations.
+sumMinTemps = 0
+sumMaxTemps = 0
+for position in range(len(min_temps)):
+    sumMinTemps += min_temps[position]
+    sumMaxTemps += max_temps[position]
+    minTemp = min_temps[position]
+    maxTemp = max_temps[position]
+    
+print(sumMinTemps/(len(min_temps)))
+print(sumMaxTemps/(len(max_temps)))
 
-for max_temp in range(len(max_temp)):
-    print 
+print(f"the lowest recorded tempurature for Laramie in 2023 was {min(min_temps)} degrees")
+print(f"the highest recorded tempurature for Laramie in 2023 was {max(max_temps)} degrees")
+
+    
 
 
 # For the next part, determine the highest and lowest recorded temperatures.
 # HINT: You can find this information without using any logic or looping.
-max_temps.sort()
-min_temps.sort()
-print(f"the highest recorded tempurature for Laramie in 2023 was {max_temps[-1]} degrees")
-print(f"the lowest recorded tempurature for Laramie in 2023 was {min_temps[0]} degrees")
-
 
